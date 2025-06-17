@@ -34,17 +34,16 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Start the Streamlit application:
+3. Add your OpenAI key in .env
+- You can get an API key from https://platform.openai.com/api-keys
+
+  
+4. Start the Streamlit application:
 
 ```bash
 cd ai_study_assistant
 streamlit run app.py
 ```
-
-4. Enter your OpenAI API key when prompted:
-   - The application will ask for your OpenAI API key on first run
-   - The key will be saved to a `.env` file for future use
-   - You can get an API key from https://platform.openai.com/api-keys
 
 ## Project Structure
 
