@@ -10,7 +10,7 @@ from pymilvus.exceptions import ConnectionNotExistException
 
 from vector_store import StudyMaterialsStore
 
-load_dotenv()
+load_dotenv(override=True)
 
 
 class StudyAssistant:
@@ -310,7 +310,7 @@ class StudyAssistant:
                     },
                     {"role": "user", "content": prompt},
                 ],
-                temperature=0.7,
+                temperature=0.2,
             )
 
             return response.choices[0].message.content
